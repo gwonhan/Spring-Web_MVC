@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/employee/insert2" method="post">
+    <input type="number" name="empId" th:value="${empId}">
+    <input type="text" name="empName" placeholder="사원명 입력">
+    <input type="text" name="empNo" placeholder="주민등록번호 입력 (ex. 000-000)">
+    <input type="text" name="email" placeholder="이메일 입력">
+    <input type="number" name="phone" placeholder="휴대폰번호 입력">
+    <input type="text" name="deptCode" placeholder="부서코드 입력">
+    <input type="text" name="jobCode" placeholder="직급코드 입력">
+    <input type="text" name="salLevel" placeholder="급여등급 입력">
+    <input type="number" name="salary" placeholder="급여 입력">
+    <input type="text" name="bonus" placeholder="보너스율 입력">
+    <input type="number" name="managerId" placeholder="관리자사번 입력">
+    <h3>입사일</h3>
+    <input type="date" name="hireDate" placeholder="입사일 입력">
+    <h3>퇴사일</h3>
+    <input type="date" name="entDate" placeholder="퇴직여부 입력">
+    <h3>퇴직여부</h3> <br>
+    <input type="radio" name="entYN" id="entY" value="Y">
+    <label for="entY">Y</label>
+    <input type="radio" name="entYN" id="entN" value="N">
+    <label for="entN">N</label>
+    <input type="submit" value="등록하기">
+</form>
+</body>
+</html>

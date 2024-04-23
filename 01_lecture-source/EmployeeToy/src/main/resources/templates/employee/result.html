@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>사원 아이디</th>
+        <th>사원 이름</th>
+        <th>사원 번호</th>
+        <th>사원 이메일</th>
+        <th>사원 전화번호</th>
+        <th>부서 코드</th>
+        <th>직급 코드</th>
+        <th>급여 등급</th>
+        <th>급여</th>
+        <th>보너스</th>
+        <th>관리자 사번</th>
+        <th>입사일</th>
+        <th>퇴사일</th>
+        <th>퇴직여부</th>
+
+    </tr>
+<td th:text="${one.empId}"></td>
+<td th:text="${one.empName}"></td>
+<td th:text="${one.empNo}"></td>
+<td th:text="${one.email}"></td>
+<td th:text="${one.phone}"></td>
+<td th:text="${one.deptCode}"></td>
+<td th:text="${one.jobCode}"></td>
+<td th:text="${one.salLevel}"></td>
+<td th:text="${one.salary}"></td>
+<td th:text="${one.bonus}"></td>
+<td th:text="${one.managerId}"></td>
+<td th:text="${one.hireDate}"></td>
+<td th:text="${one.entDate}"></td>
+<td th:text="${one.entYN}"></td>
+
+</table>
+</body>
+</html>

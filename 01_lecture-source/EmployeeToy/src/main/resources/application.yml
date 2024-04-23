@@ -1,0 +1,15 @@
+# server port ?? ??? ??
+server:
+  port: 1818
+
+# driver config
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.0.51:3306/employee
+    username: ohgiraffers
+    password: ohgiraffers
+
+# mybatis ????
+mybatis:
+  mapper-locations: mappers/**/*.xml
